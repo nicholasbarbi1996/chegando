@@ -1,0 +1,13 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  school: one
+  kinship: 1
+  user_id: one
+
+two:
+  name: MyString
+  school: two
+  kinship: 1
+  user_id: two

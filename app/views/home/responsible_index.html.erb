@@ -1,0 +1,10 @@
+<h1 class="text-2xl font-bold">Alunos</h1>
+
+<ul class="mt-4 space-y-2">
+  <% @students.each do |student| %>
+    <li class="student-card p-4">
+      ID: <%= student["id"] %>
+      NAME: <%= student["name"] %>
+    </li>
+  <% end %>
+</ul>

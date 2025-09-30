@@ -1,0 +1,299 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+    --background: hsl(220, 13%, 97%);
+    --foreground: hsl(220, 13%, 18%);
+    --muted: hsl(220, 13%, 95%);
+    --muted-foreground: hsl(220, 9%, 46%);
+    --popover: hsl(0, 0%, 100%);
+    --popover-foreground: hsl(220, 13%, 18%);
+    --card: hsl(0, 0%, 100%);
+    --card-foreground: hsl(220, 13%, 18%);
+    --border: hsl(220, 13%, 91%);
+    --input: hsl(220, 13%, 91%);
+    --primary: hsl(262, 83%, 58%);
+    --primary-foreground: hsl(0, 0%, 100%);
+    --secondary: hsl(220, 13%, 95%);
+    --secondary-foreground: hsl(220, 13%, 18%);
+    --accent: hsl(220, 13%, 95%);
+    --accent-foreground: hsl(220, 13%, 18%);
+    --destructive: hsl(0, 12%, 69%);
+    --destructive-foreground: hsl(0, 0%, 100%);
+    --ring: hsl(262, 83%, 58%);
+    --radius: 0.75rem;
+
+    /* Custom colors for the school system - Purple palette */
+    --school-primary: hsl(262, 83%, 58%);
+    --school-success: hsl(270, 95%, 75%);
+    --school-warning: hsl(270, 95%, 65%);
+    --school-error: hsl(0, 84%, 60%);
+    --school-surface: hsl(220, 13%, 97%);
+}
+
+.dark {
+    --background: hsl(240, 10%, 3.9%);
+    --foreground: hsl(0, 0%, 98%);
+    --muted: hsl(240, 3.7%, 15.9%);
+    --muted-foreground: hsl(240, 5%, 64.9%);
+    --popover: hsl(240, 10%, 3.9%);
+    --popover-foreground: hsl(0, 0%, 98%);
+    --card: hsl(240, 10%, 3.9%);
+    --card-foreground: hsl(0, 0%, 98%);
+    --border: hsl(240, 3.7%, 15.9%);
+    --input: hsl(240, 3.7%, 15.9%);
+    --primary: hsl(262, 83%, 58%);
+    --primary-foreground: hsl(0, 0%, 100%);
+    --secondary: hsl(240, 3.7%, 15.9%);
+    --secondary-foreground: hsl(0, 0%, 98%);
+    --accent: hsl(240, 3.7%, 15.9%);
+    --accent-foreground: hsl(0, 0%, 98%);
+    --destructive: hsl(0, 62.8%, 30.6%);
+    --destructive-foreground: hsl(0, 0%, 98%);
+    --ring: hsl(240, 4.9%, 83.9%);
+    --radius: 0.5rem;
+}
+
+@layer base {
+    * {
+        @apply border-border;
+    }
+
+    body {
+        @apply font-sans antialiased bg-background text-foreground;
+        background-color: hsl(0, 0%, 98%);
+    }
+}
+
+/* Modern Design System - Purple Theme */
+.app-header {
+    background: white;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid hsl(220, 13%, 91%);
+}
+
+.school-header {
+    background: linear-gradient(135deg, hsl(262, 83%, 58%) 0%, hsl(262, 83%, 48%) 100%);
+    box-shadow: 0 4px 24px rgba(124, 58, 237, 0.15);
+}
+
+.app-card {
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+    border: 1px solid hsl(220, 13%, 91%);
+    transition: all 0.2s ease;
+}
+
+.app-card:hover {
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+    transform: translateY(-1px);
+}
+
+.btn-primary {
+    background: linear-gradient(135deg, hsl(262, 83%, 58%) 0%, hsl(262, 83%, 48%) 100%);
+    color: white;
+    border: none;
+    border-radius: 12px;
+    padding: 14px 28px;
+    font-weight: 600;
+    font-size: 15px;
+    transition: all 0.2s ease;
+    box-shadow: 0 4px 12px rgba(124, 58, 237, 0.25);
+}
+
+.btn-primary:hover {
+    background: linear-gradient(135deg, hsl(262, 83%, 48%) 0%, hsl(262, 83%, 38%) 100%);
+    transform: translateY(-1px);
+    box-shadow: 0 6px 20px rgba(124, 58, 237, 0.35);
+}
+
+.school-btn-primary {
+    background: linear-gradient(135deg, hsl(262, 83%, 58%) 0%, hsl(262, 83%, 48%) 100%);
+    color: white;
+    border: none;
+    border-radius: 12px;
+    padding: 14px 28px;
+    font-weight: 600;
+    font-size: 15px;
+    transition: all 0.2s ease;
+    box-shadow: 0 4px 12px rgba(124, 58, 237, 0.25);
+}
+
+.school-btn-primary:hover {
+    background: linear-gradient(135deg, hsl(262, 83%, 48%) 0%, hsl(262, 83%, 38%) 100%);
+    transform: translateY(-1px);
+    box-shadow: 0 6px 20px rgba(124, 58, 237, 0.35);
+}
+
+.school-warning-btn {
+    background: linear-gradient(135deg, hsl(270, 95%, 65%) 0%, hsl(270, 95%, 55%) 100%);
+    color: white;
+    border: none;
+    border-radius: 12px;
+    padding: 12px 24px;
+    font-weight: 600;
+    transition: all 0.2s ease;
+}
+
+.school-warning-btn:hover {
+    background: linear-gradient(135deg, hsl(270, 95%, 55%) 0%, hsl(270, 95%, 45%) 100%);
+    transform: translateY(-1px);
+}
+
+.school-success-btn {
+    background: linear-gradient(135deg, hsl(270, 95%, 75%) 0%, hsl(270, 95%, 65%) 100%);
+    color: white;
+    border: none;
+    border-radius: 12px;
+    padding: 12px 24px;
+    font-weight: 600;
+    transition: all 0.2s ease;
+}
+
+.school-error-btn {
+    background: linear-gradient(135deg, #ef4444 0%, #dc2626 100%);
+    color: white;
+    border: none;
+    border-radius: 12px;
+    padding: 12px 24px;
+    font-weight: 600;
+    transition: all 0.2s ease;
+}
+
+.student-card {
+    transition: all 0.2s ease;
+    border-radius: 12px;
+    background: white;
+    border: 1px solid hsl(220, 13%, 91%);
+}
+
+.student-card:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+    border-color: hsl(262, 83%, 70%);
+}
+
+.student-card.selected {
+    border-color: hsl(262, 83%, 58%);
+    box-shadow: 0 4px 16px rgba(139, 92, 246, 0.15);
+    background: hsl(262, 83%, 97%);
+}
+
+.student-card.disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+    transform: none !important;
+    background: hsl(220, 13%, 98%);
+    border-color: hsl(220, 13%, 88%);
+}
+
+.summary-card {
+    background: white;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+    border: 1px solid hsl(220, 13%, 91%);
+    transition: all 0.2s ease;
+    cursor: pointer;
+}
+
+.summary-card:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+    border-color: hsl(262, 83%, 70%);
+}
+
+.summary-card.active {
+    border-color: hsl(262, 83%, 58%);
+    background: hsl(262, 83%, 97%);
+    box-shadow: 0 4px 16px rgba(139, 92, 246, 0.15);
+}
+
+/* Loading animation */
+@keyframes spin {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+
+.animate-spin-slow {
+    animation: spin 2s linear infinite;
+}
+
+/* Slide animations for modals */
+@keyframes slideUp {
+    from {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.slide-up {
+    animation: slideUp 0.3s ease-out;
+}
+
+/* Form inputs styling */
+.form-input {
+    background: white;
+    border: 1px solid hsl(220, 13%, 91%);
+    border-radius: 8px;
+    padding: 12px 16px;
+    font-size: 14px;
+    transition: all 0.2s ease;
+}
+
+.form-input:focus {
+    outline: none;
+    border-color: hsl(262, 83%, 58%);
+    box-shadow: 0 0 0 3px rgba(139, 92, 246, 0.1);
+}
+
+.form-select {
+    background: white;
+    border: 1px solid hsl(220, 13%, 91%);
+    border-radius: 8px;
+    padding: 12px 16px;
+    font-size: 14px;
+    transition: all 0.2s ease;
+}
+
+.form-select:focus {
+    outline: none;
+    border-color: hsl(262, 83%, 58%);
+    box-shadow: 0 0 0 3px rgba(139, 92, 246, 0.1);
+}
+
+/* Select component overrides for purple theme */
+[data-radix-select-trigger] {
+    border-color: hsl(262, 83%, 58%) !important;
+}
+
+[data-radix-select-trigger]:focus {
+    outline: none !important;
+    border-color: hsl(262, 83%, 58%) !important;
+    box-shadow: 0 0 0 2px rgba(139, 92, 246, 0.2) !important;
+}
+
+/* Custom scrollbar */
+.custom-scrollbar::-webkit-scrollbar {
+    width: 6px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+    background: hsl(60, 4.8%, 95.9%);
+    border-radius: 3px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+    background: hsl(25, 5.3%, 44.7%);
+    border-radius: 3px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+    background: hsl(20, 14.3%, 4.1%);
+}

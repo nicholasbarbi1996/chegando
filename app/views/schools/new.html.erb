@@ -1,0 +1,25 @@
+<h1>Cadastrar Escola</h1>
+
+<%= form_with model: @school, url: schools_path, local: true do |form| %>
+  <% if @school.errors.any? %>
+    <div class="alert alert-danger">
+      <h2><%= pluralize(@school.errors.count, "erro") %> impediram o cadastro:</h2>
+<ul>
+<% @school.errors.full_messages.each do |msg| %>
+          <li><%= msg %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+<%= form.hidden_field :agendaedu_id, value: @school.agendaedu_id %>
+<%= form.hidden_field :name, value: @school.name %>
+
+<div class="field">
+<%= form.label :agendaedu_token, "AgendaEdu Token" %>
+    <%= form.text_field :agendaedu_token %>
+</div>
+
+<div class="actions">
+<%= form.submit "Salvar", class: "btn btn-primary" %>
+  </div>
+<% end %>

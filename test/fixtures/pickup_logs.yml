@@ -1,0 +1,21 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  school_gate: one
+  family_user: one
+  student_id: 
+  student_name: MyString
+  user_id: 
+  requested_at: 2025-07-01 16:13:10
+  released_by_id: 
+  status: 
+
+two:
+  school_gate: two
+  family_user: two
+  student_id: 
+  student_name: MyString
+  user_id: 
+  requested_at: 2025-07-01 16:13:10
+  released_by_id: 
+  status: 
