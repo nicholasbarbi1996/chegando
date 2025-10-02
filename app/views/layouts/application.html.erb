@@ -7,6 +7,7 @@
   <%= csrf_meta_tags %>
   <%= csp_meta_tag %>
   <%= stylesheet_link_tag "tailwind", "data-turbo-track": "reload" %>
+    <%= javascript_pack_tag "application" %>
 </head>
 <body class="bg-background text-foreground font-sans antialiased p-6">
 <%= yield %>

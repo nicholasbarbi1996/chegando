@@ -110,6 +110,8 @@ GEM
       logger
     faraday-net_http (3.4.1)
       net-http (>= 0.5.0)
+    foreman (0.90.0)
+      thor (~> 1.4)
     globalid (1.2.1)
       activesupport (>= 6.1)
     i18n (1.14.7)
@@ -265,7 +267,7 @@ GEM
     tailwindcss-ruby (4.1.10-x86_64-darwin)
     tailwindcss-ruby (4.1.10-x86_64-linux-gnu)
     tailwindcss-ruby (4.1.10-x86_64-linux-musl)
-    thor (1.3.2)
+    thor (1.4.0)
     timeout (0.4.3)
     tzinfo (2.0.6)
       concurrent-ruby (~> 1.0)
@@ -307,6 +309,7 @@ DEPENDENCIES
   devise
   dotenv-rails
   faraday
+  foreman
   jbuilder
   logger
   pg (~> 1.1)
@@ -315,6 +318,7 @@ DEPENDENCIES
   rails (~> 7.0.4)
   react_on_rails (~> 16.1, >= 16.1.1)
   selenium-webdriver
+  shakapacker (= 8.4)
   sprockets-rails
   tailwindcss-rails
   tzinfo-data
