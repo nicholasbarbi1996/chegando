@@ -12,7 +12,7 @@ gem "pry"
 gem 'devise'
 # Bundle edge Rails instead: gem "rails", github: "rails/rails", branch: "main"
 gem "rails", "~> 7.0.4"
-
+gem 'react_on_rails', '~> 16.1', '>= 16.1.1'
 # The original asset pipeline for Rails [https://github.com/rails/sprockets-rails]
 gem "sprockets-rails"
 
