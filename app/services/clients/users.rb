@@ -3,7 +3,7 @@ require 'json'
 require 'uri'
 
 class Clients::Users
-  API_URL = "http://localhost:3000/v2/"
+  API_URL = "http://localhost:3001/v2/"
 
   def initialize(aetoken)
     @aetoken = aetoken

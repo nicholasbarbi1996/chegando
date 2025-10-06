@@ -1,15 +1,16 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html>
 <head>
-  <meta charset="UTF-8" />
-  <title>Saída Inteligente</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Saida Inteligente</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
   <%= csrf_meta_tags %>
   <%= csp_meta_tag %>
-  <%= stylesheet_link_tag "tailwind", "data-turbo-track": "reload" %>
-    <%= javascript_pack_tag "application" %>
+
+  <%= stylesheet_link_tag "application" %>
+  <%= javascript_pack_tag "application" %>
 </head>
-<body class="bg-background text-foreground font-sans antialiased p-6">
+
+<body>
 <%= yield %>
 </body>
 </html>

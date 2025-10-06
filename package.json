@@ -1,0 +1,67 @@
+{
+  "packageManager": "npm@10.8.2",
+  "name": "app",
+  "private": true,
+  "version": "0.1.0",
+  "babel": {
+    "presets": [
+      "./node_modules/shakapacker/package/babel/preset.js"
+    ]
+  },
+  "browserslist": [
+    "defaults"
+  ],
+  "dependencies": {
+    "@babel/core": "^7.28.4",
+    "@babel/plugin-transform-runtime": "^7.28.3",
+    "@babel/preset-env": "^7.28.3",
+    "@babel/preset-react": "^7.27.1",
+    "@babel/runtime": "^7.28.4",
+    "@radix-ui/react-dialog": "^1.1.15",
+    "@radix-ui/react-label": "^2.1.7",
+    "@radix-ui/react-popover": "^1.1.15",
+    "@radix-ui/react-select": "^2.2.6",
+    "@radix-ui/react-slot": "^1.2.3",
+    "@radix-ui/react-tabs": "^1.1.13",
+    "@tanstack/react-query": "^5.90.2",
+    "@types/babel__core": "^7.20.5",
+    "@types/webpack": "^5.28.5",
+    "axios": "^1.7.1",
+    "babel-loader": "^10.0.0",
+    "babel-plugin-macros": "^3.1.0",
+    "babel-plugin-transform-react-remove-prop-types": "^0.4.24",
+    "class-variance-authority": "^0.7.1",
+    "clsx": "^2.1.1",
+    "compression-webpack-plugin": "^11.1.0",
+    "css-loader": "^7.1.2",
+    "css-minimizer-webpack-plugin": "^7.0.2",
+    "lucide-react": "^0.544.0",
+    "mini-css-extract-plugin": "^2.9.4",
+    "prop-types": "^15.8.1",
+    "react": "^19.2.0",
+    "react-day-picker": "^9.11.0",
+    "react-dom": "^19.2.0",
+    "react-on-rails": "^16.1.1",
+    "react-query": "^3.39.3",
+    "shakapacker": "8.4.0",
+    "style-loader": "^4.0.0",
+    "tailwind-merge": "^3.3.1",
+    "terser-webpack-plugin": "^5.3.14",
+    "webpack": "^5.102.0",
+    "webpack-assets-manifest": "^6.3.0",
+    "webpack-cli": "^6.0.1",
+    "webpack-merge": "^6.0.1",
+    "webpack-subresource-integrity": "^5.1.0",
+    "wouter": "^3.7.1"
+  },
+  "devDependencies": {
+    "@babel/preset-typescript": "^7.27.1",
+    "@pmmmwh/react-refresh-webpack-plugin": "^0.6.1",
+    "@types/node": "^24.6.2",
+    "@types/react": "^19.2.0",
+    "@types/react-dom": "^19.2.0",
+    "react-refresh": "^0.18.0",
+    "typescript": "^5.9.3",
+    "webpack-dev-server": "^5.2.2"
+  }
+}

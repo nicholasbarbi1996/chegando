@@ -72,3 +72,5 @@ group :test do
 end
 
 gem "shakapacker", "= 8.4"
+# Gemfile
+gem 'rack-cors', require: 'rack/cors'

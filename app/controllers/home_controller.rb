@@ -12,6 +12,8 @@ class HomeController < ApplicationController
 
     user = find_or_create_user(response)
 
+    @school_id = response["data"]["relationships"]["school"]["data"]["id"]
+
     if user == :school_not_found
       redirect_to new_school_path(
          agendaedu_id: response["data"]["relationships"]["school"]["data"]["id"],
